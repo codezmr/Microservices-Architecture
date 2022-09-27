@@ -35,6 +35,7 @@ public class MyFilter implements GlobalFilter{
 		keySet.forEach(key ->{
 			List<String> values = headers.get(key);
 			System.out.println(key + "::"+values);
+			
 		});
 		
 		return chain.filter(exchange);

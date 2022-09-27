@@ -1,0 +1,21 @@
+server:
+  port: 9090
+  
+spring:
+  application:
+    name: GREET-API
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111/ #reg with admin server url
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8671/eureka #reg with eureka server url
+#      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*' #enabling accuator end points
